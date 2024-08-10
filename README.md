@@ -55,13 +55,13 @@ import "slick-carousel/slick/slick-theme.css";
 Configurado en [`tailwind.config.js`](./tailwind.config.js) y aplicado globalmente en [`src/styles/index.css`](./src/styles/index.css).
 
 #### i18next
-Configuración de internacionalización disponible en [`src/config/i18n.js`](./src/config/i18n.js). Los recursos de traducción están en la carpeta [`public/locales`](.public/locales).
+Configuración de internacionalización disponible en [`portafolio/src/config/i18next.config.js`](.portafolio/src/config/i18next.config.js). Los recursos de traducción están en la carpeta [`public/locales`](.public/locales).
 
 #### React Simple Typewriter
-Ejemplo de uso en [`src/components/quien-soy.jsx`](./src/components/quien-soy.jsx).
+Ejemplo de uso en [`portafolio/src/components/quien-soy.jsx`](.portafolio/src/components/quien-soy.jsx).
 
 #### React Slick
-Configura y utiliza `react-slick` en tus componentes React, por ejemplo en [`src/components/otros-trabajos.jsx`](./src/components/otros-trabajos.jsx).
+Configura y utiliza `react-slick` en tus componentes React, por ejemplo en [`portafolio/src/components/otros-trabajos.jsx`](.portafolio/src/components/otros-trabajos.jsx).
 
 ### Ejecutar el Proyecto
 
