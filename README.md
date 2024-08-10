@@ -52,10 +52,10 @@ import "slick-carousel/slick/slick-theme.css";
 ### Configuración Específica
 
 #### Tailwind CSS
-Configurado en [`tailwind.config.js`](./tailwind.config.js) y aplicado globalmente en [`portafolio/src/styles/index.css`](portafolio/src/styles/index.css).
+Configurado en [`tailwind.config.js`](./tailwind.config.js) y aplicado globalmente en [`portafolio/src/styles/tailwind.css`](portafolio/src/styles/tailwind.css).
 
 #### i18next
-Configuración de internacionalización disponible en [`portafolio/src/config/i18next.config.js`](portafolio/src/config/i18next.config.js). Los recursos de traducción están en la carpeta [`public/locales`](.public/locales).
+Configuración de internacionalización disponible en [`portafolio/src/config/i18next.config.js`](portafolio/src/config/i18next.config.js). Los recursos de traducción están en la carpeta [`portafolio/public/locales`](portafolio/public/locales).
 
 #### React Simple Typewriter
 Ejemplo de uso en [`portafolio/src/components/quien-soy.jsx`](portafolio/src/components/quien-soy.jsx).
