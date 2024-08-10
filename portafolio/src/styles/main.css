@@ -52,14 +52,161 @@ html {
   font-size: 50px;
 }
 
-.puntos {
-  color: #0D928B;
-}
-
 .separacion {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
   height: 30px;
+}
+
+/***********  proyectos  ************/
+
+.puntos-proyecto {
+  fill: #4B4CC3;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.images{
+  border-radius: 10px;
+  width: 420px;
+  height: auto;
+  object-fit: cover; /* Cubre el contenedor, cortando partes de la imagen si es necesario */
+  display: block;
+}
+
+.imagesA{
+  border-radius: 10px;
+  width: 334px;
+  height: auto;
+  object-fit: cover; /* Cubre el contenedor, cortando partes de la imagen si es necesario */
+  display: block;
+}
+
+.titulo-proyectos{
+  font-weight: bolder;
+}
+
+#tituloERP{
+  color: #A8739C;
+}
+
+#tituloNG{
+  color: #4B4CC3;
+}
+
+#titulo-proyecto{
+  background: linear-gradient(to right, #4B4CC3, #A8739C);
+  display: inline-block;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 1000px;
+}
+
+.it-icons{
+  width: auto;
+  height: 50px;
+}
+
+#contenedor-erp{
+  width: 420px;
+  height: 192px;
+}
+
+#contenedor-alphanex{
+  width: 451px;
+  height: 192px;
+}
+
+#contenedor-alphanex-arriba{
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  margin-left: 15%;
+}
+
+
+#contenedor-alphanex-abajo{
+  margin-top: 40px;
+  margin-left: 15%;
+}
+
+
+#contenedor-erp-arriba{
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+  margin-left: 15%;
+}
+
+#contenedor-erp-abajo{
+  display: flex;
+  padding-top: 40px;
+  gap: 40px;
+  margin-left: 15%;
+}
+
+/******* otros trabajos ********/
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #9E9E9E !important; /* Nuevo color con !important */
+}
+
+.cuadros{
+  background-color: rgba(97, 183, 178, 0.5);
+}
+
+.lenguaje{
+  color: #61B7B2;
+}
+
+.link{
+  gap: 5px;
+}
+
+
+/********************   END   **************************/
+
+#contactame{
+  color: #53C2BD;
+  font-size: 35px;
+  margin-bottom: 5%;
+  font-weight: 500;
+  margin-top: 2%;
+}
+
+
+#cuerpo-final{
+  gap: 20px;
+}
+
+#cuadro-correo{
+  background-color: #53C2BD;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+#correo{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+}
+
+#cuadro-repo{
+  margin-top: 5%;
+}
+
+#link-repo{
+  color: #9E9E9E;
+}
+
+.link-repo-g{
+  gap: 5px;
 }
