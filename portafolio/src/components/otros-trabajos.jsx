@@ -71,7 +71,7 @@ function OtrosTrabajos() {
                 <div className="mt-2">
                 <Slider {...settings}> 
                     {otrosTrabajos.map((d) => (
-                    <div key={d.name} className="h-450px text-black">
+                    <div key={d.name} className="h-450px text-black dark:text-white">
                         <div className="h-56 cuadros flex justify-center items-center rounded-xl">
                             <img src={d.img} alt="" className="h-44 rounded"/>
                         </div>

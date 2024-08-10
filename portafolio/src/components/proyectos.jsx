@@ -36,7 +36,7 @@ function Proyectos() {
                             <img className='it-icons' src="tecnology-icon/react.png" alt="react" />
                         </div>
                         <div id='contenedor-alphanex-abajo' className='flex'>
-                            <img className='it-icons' src="tecnology-icon/mapbox.png" alt="mv" />
+                            <img className='it-icons dark:dark:invert' src="tecnology-icon/mapbox.png" alt="mv" />
                         </div>
                     </div>
         },

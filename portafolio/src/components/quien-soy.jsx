@@ -40,12 +40,12 @@ function QuienSoy() {
                     <img src="JavierNanco.png" alt="Programador" className="mt-10 mr-10 h-48"/>
                 </div>
                 <div>
-                    <h1 id="pregunta">
+                    <h1 id="pregunta" className='dark:text-white'>
                         {t('titulo')}  
                         <span className='Escritura' style={{ fontWeight: 'bold' }}> {text}</span> 
-                        <span><Cursor/></span>
+                        <span className='dark:text-white'><Cursor/></span>
                     </h1>
-                    <div className='parrafo'>{wordData}</div>
+                    <div className='parrafo dark:text-white'>{wordData}</div>
                 </div>
             </div>
             <div className='puntos flex items-center mt-5'>
