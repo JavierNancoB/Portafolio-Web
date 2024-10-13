@@ -26,10 +26,10 @@ function Head() {
   return (
     <header className="flex justify-end items-center p-4 w-full fixed">
       <button id='translate' onClick={toggleLanguage} className={isActive ? 'active' : ''}>
-        <img src="other-icon/translate.svg" className="mr-2" alt="Translate icon" />
+        <img src={`${process.env.PUBLIC_URL}/other-icon/translate.svg`} className="mr-2" alt="Translate icon" />
       </button>
       <button id='dark-mode' onClick={toggleDarkMode} className={isDarkMode ? 'active' : ''}>
-        <img src="other-icon/night.svg" alt="Night mode icon" />
+        <img src={`${process.env.PUBLIC_URL}/other-icon/night.svg`} alt="Night mode icon" />
       </button>
     </header>
   );

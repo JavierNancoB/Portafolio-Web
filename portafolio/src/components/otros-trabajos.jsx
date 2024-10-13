@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/main.css'; // Importar el archivo CSS
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from 'react';
 
 function OtrosTrabajos() {
 
@@ -15,42 +14,52 @@ function OtrosTrabajos() {
     const otrosTrabajos = [
         {
             name: [t('Djikstra')],
-            img: 'otros-trabajos/djikstra.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/djikstra.png`,
             review: 'Python',
             url: 'https://github.com/JavierNanco/Juego-Heroe-y-Bruja-python',
+        },
+        {
+            name: [t('Backtracking')],
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/Backtracking.png`,
+            review: 'Python',
+            url: 'https://github.com/JavierNancoB/Backtracking',
+        },
+        {
+            name: [t('Programacion-Dinamica')],
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/Programacion-Dinamica.png`,
+            review: 'Python',
+            url: 'https://github.com/JavierNancoB/Programacion-Dinamica',
         },  
         {
             name: [t('fuerza bruta')],
-            img: 'otros-trabajos/fuerza-bruta.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/fuerza-bruta.png`,
             review: 'Python',
             url: 'https://github.com/JavierNanco/Caballo-de-ajedrez',    
         },
         {
             name: [t('ABB')],
-            img: 'otros-trabajos/diccionario.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/diccionario.png`,
             review: 'C++',
             url: 'https://github.com/JavierNanco/Taller-5-EDD',
-
         },
         {
             name: [t('Pokémon')],
-            img: 'otros-trabajos/pokemon.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/pokemon.png`,
             review: 'SQL',
             url: 'https://github.com/JavierNanco/Taller-BDD-sql',
         },
         {
             name: [t('C++')],
-            img: 'otros-trabajos/cpp.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/cpp.png`,
             review: 'C++',
             url: 'https://github.com/JavierNanco/Taller-Lenguaje',
         },
         {
             name: [t('Lollapalooza')],
-            img: 'otros-trabajos/lola.png',
+            img: `${process.env.PUBLIC_URL}/otros-trabajos/lola.png`,
             review: 'C++',
             url: 'https://github.com/JavierNanco/Taller-2-Lollapalooza',
         },
-
     ];
 
     useEffect(() => {
@@ -77,15 +86,14 @@ function OtrosTrabajos() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000
-      };
+    };
       
-
     return (
         <div id='otros-trabajos' className="flex flex-col justify-center items-center min-h-screen wrapper"> 
             <button className="boton-arriba" onClick={() => {
                 document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
                 }}>
-                <img src="arrow/up.svg" alt="Desplazar hacia arriba" />
+                <img src={`${process.env.PUBLIC_URL}/arrow/up.svg`} alt="Desplazar hacia arriba" />
             </button>
             <div className="w-3/4">
                 <div className="mt-2">
@@ -100,7 +108,7 @@ function OtrosTrabajos() {
                             <div className='flex link'>
                                 <p className="text-center font-bold lenguaje">{d.review}</p>
                                 <a href={d.url} target="_blank" rel="noreferrer">
-                                    <img src="other-icon/githubfilledv.svg" alt="Github" className="h-6 w-6 lenguaje-git" />
+                                    <img src={`${process.env.PUBLIC_URL}/other-icon/githubfilledv.svg`} alt="Github" className="h-6 w-6 lenguaje-git" />
                                 </a>
                             </div>
                         </div>
@@ -112,7 +120,7 @@ function OtrosTrabajos() {
             <button className="boton-abajo" onClick={() => {
                 document.getElementById('end').scrollIntoView({ behavior: 'smooth' });
             }}>
-                <img src="arrow/down.svg" alt="Desplazar hacia abajo" />
+                <img src={`${process.env.PUBLIC_URL}/arrow/down.svg`} alt="Desplazar hacia abajo" />
             </button>
         </div>
     );

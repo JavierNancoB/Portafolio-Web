@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import '../styles/main.css'; // Importar el archivo CSS
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import PuntoSVG from './puntosvg.jsx';
 import { useTranslation } from "react-i18next";
-import { useEffect } from 'react';
-import { useMemo } from 'react';
 
 function QuienSoy() {
     const { t, i18n } = useTranslation('quien-soy');
@@ -24,7 +22,7 @@ function QuienSoy() {
 
     useEffect(() => {
         setWordData(words[activeIndex].value);
-    }, [i18n.language, activeIndex, words]); // Añade activeIndex como dependencia para actualizar cuando cambie
+    }, [i18n.language, activeIndex, words]);
 
     const handleClick = (index) => {
         setActiveIndex(index);
@@ -33,11 +31,11 @@ function QuienSoy() {
     return (
         <div id="quien-soy" className="flex flex-col justify-center items-center min-h-screen wrapper">
             <button className="boton-arriba" onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })}>
-                <img src="arrow/up.svg" alt="Desplazar hacia arriba" />
+                <img src={`${process.env.PUBLIC_URL}/arrow/up.svg`} alt="Desplazar hacia arriba" />
             </button>
             <div className="flex foto-texto">
                 <div>
-                    <img src="JavierNanco.png" alt="Programador" className="foto mt-10 mr-10 h-48"/>
+                    <img src={`${process.env.PUBLIC_URL}/JavierNanco.png`} alt="Programador" className="foto mt-10 mr-10 h-48" />
                 </div>
                 <div>
                     <h1 id="pregunta" className='dark:text-white'>
@@ -59,11 +57,10 @@ function QuienSoy() {
                 ))}
             </div>
             <button className="boton-abajo" onClick={() => document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' })}>
-                <img src="arrow/down.svg" alt="Desplazar hacia abajo" />
+                <img src={`${process.env.PUBLIC_URL}/arrow/down.svg`} alt="Desplazar hacia abajo" />
             </button>
         </div>
     );
 }
 
 export default QuienSoy;
-

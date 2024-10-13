@@ -285,22 +285,79 @@ html {
     margin-top: 30px;
   }
   
-  .titulazo{
-    margin-left: 25%;
-  }
   .el-proyecto{
     margin-right: 0;
     margin-left: 0;
   }
 
-  #tituloNG{
+  .puntos-proyecto{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
     margin-left: 0;
   }
   
-  .container-fotos{
-    display: none;
+  .titulazo{
+    justify-content: center;
   }
 
+  .fotos-eudora{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-fotos img{
+    max-height: 125px;
+    width: auto;
+  }
+
+  .container-fotos{
+    width: 312px;
+  }
+
+  #contenedor-erp-arriba{
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-bottom: 10px;
+  }
+
+  #contenedor-erp-abajo{
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+  }
+
+  #contenedor-erp{
+    width: 80vw;
+    height: 125px;
+  }
+
+  #contenedor-alphanex-abajo{
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+  }
+
+  #contenedor-alphanex-arriba{
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    display: flex;
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin-bottom: 10px;
+  }
+
+  #contenedor-alphanex{
+    width: 80vw;
+    height: 125px;
+  }
   /*********** END ************/
 
   #cuerpo-final{
