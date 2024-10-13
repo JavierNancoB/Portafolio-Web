@@ -1,6 +1,8 @@
 {
     "Djikstra": "Algoritmo de Djikstra",
     "fuerza bruta" :"Algoritmo de Fuerza Bruta",
+    "Backtracking": "Algoritmo de Backtracking",
+    "Programacion-Dinamica": "Programación Dinámica",
     "ABB":"Diccionario ABB",
     "Pokémon": "Base de Datos de Pokémon",
     "C++": "Conceptos Avanzados de C++",
