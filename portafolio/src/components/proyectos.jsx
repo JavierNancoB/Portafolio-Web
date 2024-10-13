@@ -104,7 +104,7 @@ function Proyectos() {
     return (
         <div id='proyectos' className="flex flex-col justify-center items-center min-h-screen wrapper">
             {/* Botón para desplazar la vista hacia la sección "quien-soy" */}
-            <button onClick={() => {
+            <button className="boton-arriba" onClick={() => {
                 document.getElementById('quien-soy').scrollIntoView({ behavior: 'smooth' });
             }}>
                 <img src="arrow/up.svg" alt="Desplazar hacia arriba" />
@@ -112,17 +112,17 @@ function Proyectos() {
             
             <h1 id="titulo-proyecto" className="text-center text-4xl mb-10 ">{t('titulo')}</h1>
             
-            <div className='flex '>
+            <div id="proyectos-erp-an" className='flex'>
                 {/* Sección del proyecto NexGreen de AlphaNex */}
-                <div className='mr-40'>
-                    <div className='flex'>
+                <div className='el-proyecto mr-40'>
+                    <div className='titulazo flex'>
                         <h1 id='tituloNG' className='mb-2 titulo-proyectos'>{t('AN')}</h1>
                         <a href="https://alphanex.cl/#inicio">
                             <img src="other-icon/url.svg" alt="a" className='h-7 ml-2'/>
                         </a>
                         
                     </div>
-                    <div>{imageAlphaNexData}</div>
+                    <div className='container-fotos'>{imageAlphaNexData}</div>
                     <div className='puntos-proyecto flex items-center mt-5'>
                     {imageAlphaNex.map((data, i) => (
                         <button
@@ -140,14 +140,14 @@ function Proyectos() {
                 </div>
                 
                 {/* Sección del proyecto ERP de Eudora Vinos */}
-                <div className='ml-30'>
-                    <div className='flex'>
+                <div className='el-proyecto ml-30'>
+                    <div className='titulazo flex'>
                         <h1 id='tituloERP' className='mb-2 titulo-proyectos t'>{t('ERP')}</h1>
                         <a href="https://github.com/JavierNancoB/Trabajo-Ingenieria-de-Software.git">
                             <img src="other-icon/githubfilled.svg" alt="b" className='h-7 ml-2 '/>
                         </a>
                     </div>
-                    <div>{imageERPData}</div>
+                    <div className='container-fotos'>{imageERPData}</div>
                     <div  className='puntos-proyecto flex items-center mt-5'>
                     {imageERP.map((data, i) => (
                         <button
@@ -165,7 +165,7 @@ function Proyectos() {
             </div>
             
             {/* Botón para desplazar la vista hacia la sección "home" */}
-            <button onClick={() => {
+            <button className="boton-abajo" onClick={() => {
                 document.getElementById('otros-trabajos').scrollIntoView({ behavior: 'smooth' });
             }}>
                 <img src="arrow/down.svg" alt="Desplazar hacia abajo" />

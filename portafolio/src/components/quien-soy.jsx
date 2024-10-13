@@ -32,18 +32,17 @@ function QuienSoy() {
 
     return (
         <div id="quien-soy" className="flex flex-col justify-center items-center min-h-screen wrapper">
-            <button onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })}>
+            <button className="boton-arriba" onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })}>
                 <img src="arrow/up.svg" alt="Desplazar hacia arriba" />
             </button>
-            <div className="flex">
+            <div className="flex foto-texto">
                 <div>
-                    <img src="JavierNanco.png" alt="Programador" className="mt-10 mr-10 h-48"/>
+                    <img src="JavierNanco.png" alt="Programador" className="foto mt-10 mr-10 h-48"/>
                 </div>
                 <div>
                     <h1 id="pregunta" className='dark:text-white'>
-                        {t('titulo')}  
-                        <span className='Escritura' style={{ fontWeight: 'bold' }}> {text}</span> 
-                        <span className='dark:text-white'><Cursor/></span>
+                        {t('titulo')}                    
+                        <span className='dark:text-white'><span className='Escritura' style={{ fontWeight: 'bold' }}> {text}<Cursor/></span></span>
                     </h1>
                     <div className='parrafo dark:text-white'>{wordData}</div>
                 </div>
@@ -59,7 +58,7 @@ function QuienSoy() {
                     </button>
                 ))}
             </div>
-            <button onClick={() => document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' })}>
+            <button className="boton-abajo" onClick={() => document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' })}>
                 <img src="arrow/down.svg" alt="Desplazar hacia abajo" />
             </button>
         </div>

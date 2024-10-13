@@ -16,7 +16,7 @@ function Inicio() {
                     <img src="other-icon/download.svg" alt="Download Icon" />
                 </button>
             </a>
-            <button onClick={() => {
+            <button className="boton-abajo" onClick={() => {
                 document.getElementById('quien-soy').scrollIntoView({ behavior: 'smooth' });
             }}>
                 <img src="arrow/down.svg" alt="Scroll Down Icon" />

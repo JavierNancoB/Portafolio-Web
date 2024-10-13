@@ -10,7 +10,7 @@ i18n
     lng: 'es', // Idioma inicial
     backend: {
       // Ruta hacia los recursos de traducción
-      loadPath: '/locales/{{lng}}/{{ns}}.json'
+      loadPath: '/Portafolio-Web/locales/{{lng}}/{{ns}}.json',
     },
     ns: ['end', 'home', 'proyectos', 'quien-soy'], // Espacios de nombres usados en tu aplicación
     defaultNS: 'home', // Espacio de nombres por defecto

@@ -4,10 +4,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from 'react';
 
 function OtrosTrabajos() {
 
     const { t } = useTranslation('otros-trabajos');
+
+    const [slidesToShow, setSlidesToShow] = useState(3);
 
     const otrosTrabajos = [
         {
@@ -50,10 +53,27 @@ function OtrosTrabajos() {
 
     ];
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 720) {
+                setSlidesToShow(1);
+            } else {
+                setSlidesToShow(3);
+            }
+        };
+
+        // Ajustar slidesToShow al montar y cuando cambie el tamaño de la ventana
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        // Limpiar el event listener al desmontar el componente
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000
@@ -62,7 +82,7 @@ function OtrosTrabajos() {
 
     return (
         <div id='otros-trabajos' className="flex flex-col justify-center items-center min-h-screen wrapper"> 
-            <button onClick={() => {
+            <button className="boton-arriba" onClick={() => {
                 document.getElementById('proyectos').scrollIntoView({ behavior: 'smooth' });
                 }}>
                 <img src="arrow/up.svg" alt="Desplazar hacia arriba" />
@@ -89,7 +109,7 @@ function OtrosTrabajos() {
                 </Slider>
                 </div>
             </div>
-            <button onClick={() => {
+            <button className="boton-abajo" onClick={() => {
                 document.getElementById('end').scrollIntoView({ behavior: 'smooth' });
             }}>
                 <img src="arrow/down.svg" alt="Desplazar hacia abajo" />

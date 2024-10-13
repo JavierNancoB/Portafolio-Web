@@ -1,3 +1,6 @@
+/************ HOME ************/
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -210,4 +213,117 @@ html {
 
 .link-repo-g{
   gap: 5px;
+}
+
+
+/************* MODO RESPONSIVE *************/
+
+@media (max-width: 480px) {
+
+  /****************   HOME   ******************/
+  
+  .name{
+    font-size: 50px !important;
+  }
+  .boton-arriba{
+    display: none !important;
+  }
+  .boton-abajo{
+    display: none !important;
+  }
+
+  /****************   QUIEN SOY?   ******************/
+
+  .parrafo {
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 75vw !important;
+  }
+
+  .foto-texto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pregunta {
+    font-size: 22px !important; 
+    text-align: center;
+    margin-top: 15px;
+    
+  }
+
+  #pregunta>span>span {
+    font-size: 22px !important;
+  }
+  
+  .foto {
+    margin-right: 0 !important;
+    margin-left: 25%;
+    margin-top: 0 !important;
+    height: 150px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .puntos{
+    margin-top: 220px !important;
+  }
+
+  /****************   PROYECTOS   ******************/
+
+  #proyectos-erp-an
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo-proyecto{
+    margin-right: 0 !important;
+  }
+
+  #proyectos{
+    margin-top: 30px;
+  }
+  
+  .titulazo{
+    margin-left: 25%;
+  }
+  .el-proyecto{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #tituloNG{
+    margin-left: 0;
+  }
+  
+  .container-fotos{
+    display: none;
+  }
+
+  /*********** END ************/
+
+  #cuerpo-final{
+    gap: 5px;
+  }
+
+  #cuadro-correo{
+    border-radius: 15px;
+    padding: 10px
+  }
+
+  #correo{
+    font-size: 16px;
+  }
+
+  #mail-svg{
+    width: 40px;
+    height: 40px;
+    padding-top: 25%;
+  }
+
+  #copy-svg{
+    width: 20px;
+    height: 20px;
+  }
 }
